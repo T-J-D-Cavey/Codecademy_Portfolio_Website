@@ -1,10 +1,12 @@
-#Practice website build - 'portfolio website'
+#  Practice website build - 'portfolio website'
 
 ## Codecademy project - Front end web developer course
 
+### Project summary:
+
 This is a decription of the project
 
-## Contents
+### Contents:
 
 This is a decription of the site and some key features. 
 
