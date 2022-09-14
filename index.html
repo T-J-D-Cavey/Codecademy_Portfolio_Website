@@ -1,8 +1,111 @@
 <head>
 <link rel="stylesheet" href="Resources/CSS/style.css">
 <script type="text/javascript" src="main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <h1>Hello world</h1>
+    <header class="home-header-container">
+        <!-- main navigation -->
+        <nav class="home-nav-container">
+            <ol>
+               <li><a href="index.html" rel="home page">Home</a></li> 
+               <li><a href="#home-projects" rel="list of projects">Projects</a></li> 
+               <li><a href="#home-skills" rel="my front end skill set">Skills</a></li> 
+               <li><a href="/contact" rel="list of projects">Contact</a></li> <!-- to include URl to contact page when it's made-->
+            </ol>
+        </nav>
+        <!-- hero banner -->
+        <div class="home-hero-container">
+            <h1>Tim Cavey</h1>
+            <p>- My Portfolio</p>
+        </div>
+    </header>
+    <!-- main section with image and intro -->
+    <main class="home-main-container">
+        <div>
+            <img src="Resources/Images/Tim picture.jpg" alt="Photo of Tim">
+        </div>
+        <div>
+            <div>
+                <h2>Front end web developer and software engineer</h2>
+            </div>
+            <div>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Minima quaerat sit iusto sunt nobis, illum inventore perferendis et excepturi laborum natus tenetur, ipsum exercitationem, cum ratione. 
+                   Ipsa ea dolorum sit.  Lorem ipsum dolor sit amet. 
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Ducimus amet necessitatibus architecto commodi voluptatem pariatur dolor maxime esse, expedita laborum.
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                   Corporis quod in facilis vero, quaerat vitae sint quos temporibus neque explicabo?
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Projects list -->
+    <section class="home-projects-container">
+        <div class="home-project-list-container">
+            <div>
+                <h2 id="home-projects">My Projects</h2>
+            </div>
+            <div>
+                <ol>
+                    <li>Project A (tbc)</li>
+                    <li>Project B (tbc)</li>
+                    <li>Project C (tbc)</li>
+                </ol>
+            </div>
+            
+        </div>
+        <div class="project_card card1">
+            <h3>Project A: bringing life to x</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ducimus neque rem recusandae vel necessitatibus officiis?</p>
+        </div>
+        <div class="project_card card2">
+            <h3>Project B: something else using this skill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ducimus neque rem recusandae vel necessitatibus officiis?</p>
+        </div>
+        <div class="project_card card3">
+            <h3>Project C: demonstrating Z</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ducimus neque rem recusandae vel necessitatibus officiis?</p>
+        </div>
+    </section>
+    <!-- Skills list -->
+    <section class="home-skills-container">
+        <h2 id="home-skills">Skills</h2>
+        <div class="home-skills-list">
+            <ol>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>javascript</li>
+                <li>Markdown</li>
+                <li>React</li>
+                <li>Git</li>
+            </ol>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="home-footer-container">
+        <nav>
+            <ol class="home-footer-nav-container">
+                <li><a href="index.html" rel="home page">Home</a></li> 
+                <li><a href="#home-projects" rel="list of projects">Projects</a></li> 
+                <li><a href="#home-skills" rel="my front end skill set">Skills</a></li> 
+                <li><a href="/contact" rel="list of projects">Contact</a></li> <!-- to include URl to contact page when it's made-->
+            </ol>
+        </nav>
+        <div>
+            <p>"quote from someone saying how great I am"</p>
+            <br>
+            <p>- Someone</p>
+        </div>
+        <div>
+            <p>&copy <a href="https://github.com/T-J-D-Cavey">T J D Cavey</a></p>
+        </div>        
+    </footer>
+    
 </body>

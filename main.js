@@ -1,3 +1,3 @@
-alert("Testing JS file");
+//alert("Testing JS file");
 
-console.log("testing JS file 2")
+//console.log("testing JS file 2")
