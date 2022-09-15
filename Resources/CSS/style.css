@@ -140,16 +140,46 @@ h1 {
 	flex-direction: column;
 	justify-content: space-around; 
 	align-items: center;
-	height: 60vh;
+	height: 70vh;
 	background-image: url(../Images/pexels-markus-spiske-113850.jpg);
 	background-repeat: none;
 	background-position: 60% 30%;
 	overflow: hidden;
 	color: var(--button-font-color);
-	/* need to add for bigger screens: margin-top: 1rem; */
 }
-/* !!!!! main section !!!!! */
 
+.home-hero-container p {
+	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+	.home-hero-container {
+		margin-top: 3rem;
+	}
+}
+
+
+/* !!!!! main section !!!!! */
+.home-main-container div {
+	margin: 1rem auto;
+	width: 80%;
+}
+
+#profile {
+	width: 50%;
+	background-color: green; 
+}
 .home-main-container img {
-	max-width: 4rem;
+	width: 100%;
+}
+
+.home-main-container h2, .home-main-container p {
+	margin-top: 2rem;
+	text-align: center;
+}
+@media screen and (min-width: 480px) {
+	.home-main-container {
+		display: flex;
+		justify-content: space-between;
+	}
 }
