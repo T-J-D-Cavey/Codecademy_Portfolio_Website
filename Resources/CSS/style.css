@@ -70,27 +70,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 /* !!!!! Home main navigations !!!!! */
-
-/* <header class="home-header-container">
-        <!-- main navigation -->                
-        <nav class="home-nav-container">
-            <ol>
-               <li><a href="index.html" rel="home page">Home</a></li> 
-               <li><a href="#home-projects" rel="list of projects">Projects</a></li> 
-               <li><a href="#home-skills" rel="my front end skill set">Skills</a></li> 
-               <li><a href="contact.html" rel="list of projects">Contact</a></li> <!-- to include URl to contact page when it's made-->
-            </ol>
-        </nav>
-        <!-- hero banner -->
-        <div class="home-hero-container">
-            <h1>Tim Cavey</h1>
-            <p>- My Portfolio</p>
-        </div>
-    </header> */
 
 .header-container {
 	
@@ -135,7 +118,6 @@ h1 {
 	text-align: center;
 }
 
-/* need js click event for nav display:none is turned off and on again when clicked again */
 @media screen and (max-width: 479px) { 
 	.header-container ol {
 		visibility: hidden;
@@ -151,7 +133,21 @@ h1 {
 	}
 
 }
+/* !!!!! (Home?) Hero banner !!!!! */
 
+.home-hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around; 
+	align-items: center;
+	height: 60vh;
+	background-image: url(../Images/pexels-markus-spiske-113850.jpg);
+	background-repeat: none;
+	background-position: 60% 30%;
+	overflow: hidden;
+	color: var(--button-font-color);
+	/* need to add for bigger screens: margin-top: 1rem; */
+}
 /* !!!!! main section !!!!! */
 
 .home-main-container img {
