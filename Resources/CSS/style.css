@@ -1,3 +1,17 @@
+/* Variables */
+
+:root {
+	
+--background-color-primary: #c7d56a;
+--background-color-secondary: #e7f399;
+--font-color-primary: #131313;
+--font-color-secondary: #9ba460;
+--button-color-primary: #9ba460;
+--button-font-color: #fff; 
+--font-family-primary: 'Questrial', sans-serif;
+--font-family-secondary: 'Sintony', sans-serif; 
+}
+
 /* !!!!! Reset default CSS styles !!!!! */
 
 html, body, div, span, applet, object, iframe,
@@ -28,6 +42,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: var(--background-color-primary);
+	color: var(--font-color-primary);
+	font-family: var(--font-family-secondary)
 }
 ol, ul {
 	list-style: none;
@@ -45,10 +62,98 @@ table {
 	border-spacing: 0;
 }
 
+/* Universal styling */
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-primary);
+	font-size: 1.75rem;
+}
 
-/* !!!!! Main navigations !!!!! */
+h1 {
+	font-size: 2.5rem;
+}
 
+/* !!!!! Home main navigations !!!!! */
 
+/* <header class="home-header-container">
+        <!-- main navigation -->                
+        <nav class="home-nav-container">
+            <ol>
+               <li><a href="index.html" rel="home page">Home</a></li> 
+               <li><a href="#home-projects" rel="list of projects">Projects</a></li> 
+               <li><a href="#home-skills" rel="my front end skill set">Skills</a></li> 
+               <li><a href="contact.html" rel="list of projects">Contact</a></li> <!-- to include URl to contact page when it's made-->
+            </ol>
+        </nav>
+        <!-- hero banner -->
+        <div class="home-hero-container">
+            <h1>Tim Cavey</h1>
+            <p>- My Portfolio</p>
+        </div>
+    </header> */
 
-/* !!!!! tbc !!!!! */
+.header-container {
+	
+}
+
+.header-container nav {
+	display: flex;
+	justify-content: center;	
+}
+
+.header-container li {
+	display: inline-block;
+	background-color: var(--button-color-primary);
+	padding: 0.5rem 1rem;
+	margin: 0.3rem 1rem;
+	border-radius: 100vh;
+	box-shadow: 2px 2px 1px black;
+	text-align: center;
+}
+
+.header-container li:active {
+	box-shadow: 0 0 black;
+}
+
+.header-container a {
+	text-decoration: none;
+	color: var(--button-font-color);
+}
+
+.header-container a:hover {
+    font-weight: 800;
+}
+
+.header-container button {
+	display: none;
+	color: var(--button-font-color);
+	background-color: var(--button-color-primary);
+	padding: 0.5rem 0.5rem;
+	margin: 0;
+	border-radius: 100vh;
+	box-shadow: 2px 2px 1px black;
+	text-align: center;
+}
+
+/* need js click event for nav display:none is turned off and on again when clicked again */
+@media screen and (max-width: 479px) { 
+	.header-container ol {
+		visibility: hidden;
+	}
+	.header-container li {
+		display: block;
+	}
+	.header-container button {
+		display: block;
+		position: absolute;
+		top: 0.3rem;
+		left: 0.25rem;
+	}
+
+}
+
+/* !!!!! main section !!!!! */
+
+.home-main-container img {
+	max-width: 4rem;
+}
