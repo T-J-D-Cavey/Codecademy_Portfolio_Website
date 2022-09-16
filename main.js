@@ -4,9 +4,23 @@
 
 //var button = document.getElementById("btn1");
 
-function test () {
-    document.getElementById("navvy").style.visibility = "visible";
+function toggleVisible () {
+    if (document.getElementById("navvy").style.visibility = "hidden") {
+        document.getElementById("navvy").style.visibility = "visible";    
+    } else {
+        document.getElementById("navvy").style.visibility = "hidden";
+    }
+        
+}
+// back up version:
+// function toggleVisible () {
+    // document.getElementById("navvy").style.visibility = "visible";
+    // document.getElementById("navvy").style.visibility = "hidden";
+// }
+
+function toggleHidden () {
+    document.getElementById("navvy").style.visibility = "hidden";
 }
 
-document.getElementById("btn1").addEventListener("click", test); 
+document.getElementById("btn1").addEventListener("click", toggleVisible); 
 
