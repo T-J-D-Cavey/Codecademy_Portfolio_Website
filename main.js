@@ -6,10 +6,10 @@ let navBtn = document.getElementById('navBtn');
 navBtn.addEventListener("click", toggleNav);
 
 function toggleNav () {
-    if (navList.getAttribute('class')=='displayNone') {
-        navList.setAttribute('class', 'displayBlock')
+    if (navList.getAttribute('class')=='displayNoneNav')  {
+        navList.setAttribute('class', 'displayBlockNav');        
     } else {
-        navList.setAttribute('class', 'displayNone')
+        navList.setAttribute('class', 'displayNoneNav');
     }    
 }
          

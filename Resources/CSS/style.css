@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 
@@ -121,11 +121,11 @@ h1 {
 
 @media screen and (max-width: 479px) { 
 	.header-container ol {
-		display: none; 
-	}
-	.header-container li {
-		display: block;
-	}
+		/* visibility: collapse;  */
+	 } 
+	 .header-container li { 
+		 display: block; 
+	 } 
 	.header-container button {
 		display: block;
 		position: absolute;
@@ -133,10 +133,14 @@ h1 {
 		left: 0.25rem;
 	}
 
-}
-/* !!!!! (Home?) Hero banner !!!!! */
+	.hero-container h1 {
+		font-size: 2.5rem;
+	}
 
-.home-hero-container {
+}
+/* !!!!! (Home and Contact) Hero banner !!!!! */
+
+.hero-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -145,25 +149,26 @@ h1 {
 	height: 70vh;
 	background-image: url(../Images/pexels-markus-spiske-113850.jpg);
 	background-repeat: none;
-	background-position: 60% 30%;
+	background-position: 80% 80%;
 	overflow: hidden;
 	color: var(--button-font-color);
 	text-align: center;
 	max-width: 120rem;
 	margin: 0 auto;
+	transition: background-position 15s linear;
 }
 
-.home-hero-container p {
+.hero-container:hover {
+	background-position: 0% 0%;
+}
+
+.hero-container p {
 	font-size: 1.5rem;
 }
 
-.home-hero-container h1 {
-
-}
-
-@media screen and (min-width: 480px) {
-	.home-hero-container {
-		margin-top: 3rem;
+@media screen and (max-width: 480px) {
+	.hero-container {
+		background-position: 80% 80%;
 	}
 }
 
@@ -285,8 +290,8 @@ h1 {
 /* !!!!! Footer !!!!! */
 
 .footer {
-	width: 90%;
-	margin: 3rem auto;
+	width: 100%;
+	margin: 3rem auto 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -367,7 +372,7 @@ h1 {
 /* Toggle classes */
 
 .displayBlock {
-	display: block !important;
+	display: block;
 }
 
 .displayNone {
@@ -378,4 +383,51 @@ h1 {
 }
 .visibilityVisible {
 	visibility: visible;
+}
+
+@media screen and (max-width: 479px) {
+	.displayNoneNav {
+		display: none;
+	}
+	.displayBlockNav {
+		display: block;
+	}
+}
+
+
+/*  !!!! Contact us Hero !!!! */
+
+.hero-container h2 {
+	font-size: 2.5rem;
+}
+
+.contact-details-container {
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+    justify-content: center;
+	align-items: center;
+	text-align: left;
+	max-width: 50rem;
+}
+
+.contact-details-container .contact {
+	width: 30%;
+}
+
+.contact h2, .contact ol {
+	padding: 0.5rem;
+}
+
+.contact li {
+	margin: 0.25rem;
+}
+
+@media screen and (min-width: 480px) {
+	.contact-details-container {
+		flex-direction: row;
+		align-items: stretch;
+		
+	}
 }
