@@ -236,7 +236,7 @@ h1 {
 	margin: 1.5rem;
 }
 
-.home-projects-container div, .home-projects-container h3, .home-projects-container h4, .home-projects-container button {
+.home-projects-container div, .home-projects-container h3, .home-projects-container button {
 	padding: 0.5rem;
 	text-align: center;
 	max-width: 50rem;
@@ -258,6 +258,10 @@ h1 {
 	font-weight: 700;
 }
 
+.home-projects-container button:active {
+	box-shadow: 0 0 0 black;
+}
+
 .projects-container img {
 	min-width: 5rem;
 	width: 100%;
@@ -265,6 +269,15 @@ h1 {
 	margin: 2rem auto;
 }
 
+#card1 p, #card2 p, #card3 p {
+    line-height: 2;
+}
+
+@media screen and (min-width: 480px) {
+	.home-projects-container h4 {
+		padding: 2rem;
+	}
+}
 
 /*  !!!!! Skills section !!!!! */
 
@@ -299,6 +312,9 @@ h1 {
 	
 }
 
+.home-projects-container h4 {
+	padding: 2rem 0;
+}
 
 
 @media screen and (min-width: 480px) {
