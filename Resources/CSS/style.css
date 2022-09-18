@@ -121,7 +121,7 @@ h1 {
 
 @media screen and (max-width: 479px) { 
 	.header-container ol {
-		/* visibility: collapse; */
+		display: none; 
 	}
 	.header-container li {
 		display: block;
@@ -367,7 +367,7 @@ h1 {
 /* Toggle classes */
 
 .displayBlock {
-	display: block;
+	display: block !important;
 }
 
 .displayNone {
