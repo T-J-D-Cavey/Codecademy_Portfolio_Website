@@ -62,7 +62,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Universal styling */
+/* !!!!! Universal styling !!!!! */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family-primary);
@@ -76,7 +76,7 @@ h1 {
 /* !!!!! Home main navigations !!!!! */
 
 .header-container {
-	
+	background-color: var(--background-color-secondary);
 }
 
 .header-container nav {
@@ -148,6 +148,8 @@ h1 {
 	overflow: hidden;
 	color: var(--button-font-color);
 	text-align: center;
+	max-width: 120rem;
+	margin: 0 auto;
 }
 
 .home-hero-container p {
@@ -264,14 +266,82 @@ h1 {
 
 @media screen and (min-width: 480px) {
 
-.home-skills-container {
-	
-}
-
 .home-skills-list ol {
  display: flex;
  gap: 0.5rem;
  justify-content: space-between; 
 }
+
+}
+
+/* !!!!! Footer !!!!! */
+
+.footer {
+	width: 90%;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
+	border-top: 1px solid var(--font-color-primary);
+	max-width: 54rem;
+	background-color: var(--background-color-secondary);
+}
+
+.footer nav, .footer div {
+	margin: 0.5rem 1.5rem; 
+} 
+
+.quote {
+	max-width: 26rem;
+	font-style: italic;
+}
+
+.copywrite {
+	font-size: 0.8rem;
+}
+
+.footer li {
+	padding: 0.25rem 0;
+	
+}
+
+.footer nav {
+	text-align: left;
+}
+
+.footer nav a {
+	text-decoration: none;
+	color: var(--font-color-primary);
+	border-left: 1px solid var(--font-color-primary);
+	/* border-right: 1px solid var(--font-color-primary); */
+	padding: 0 0.2rem;
+}
+
+.footer nav a:hover {
+	color: var(--button-font-color)
+}
+
+@media screen and (min-width: 480px) {
+
+.footer {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.quote {
+	min-width: 15rem;
+}
+
+.copywrite {
+	padding-right: 0;
+	margin-right: 0;
+	min-width: 5rem
+}
+
+.footer nav, .footer div {
+	margin: 0.5rem; 
+} 
 
 }
