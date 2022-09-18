@@ -453,6 +453,15 @@ h1 {
 	max-width: 50rem;
 }
 
+.contact a {
+	text-decoration: none;
+	color: var(--font-color-primary);
+	font-weight: 800;
+}
+
+.contact a:hover {
+	color: var(--button-font-color);
+}
 
 .contact h2, .contact ol {
 	text-align: center;
