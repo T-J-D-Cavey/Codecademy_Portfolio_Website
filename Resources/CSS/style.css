@@ -200,7 +200,6 @@ h1 {
 .home-projects-container {
 	width: 90%;
 	margin: 3rem auto;
-	background-color: pink;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -212,7 +211,7 @@ h1 {
 
 .home-projects-container div, .home-projects-container h3, .home-projects-container h4, .home-projects-container button {
 	padding: 0.5rem;
-	
+		text-align: center;
 }
 
 .home-projects-container button {
@@ -223,4 +222,8 @@ h1 {
 	border-radius: 100vh;
 	box-shadow: 2px 2px 1px black;
 	text-align: center;	
+}
+
+.projects-container #card1, .projects-container #card2, .projects-container #card3 {
+	display: none;
 }
